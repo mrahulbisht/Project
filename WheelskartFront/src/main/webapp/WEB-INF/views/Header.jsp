@@ -75,11 +75,11 @@ Follow me on Twitter @maridlcrmn
 <body>
 <nav><ul class="nav navbar-nav navbar-right">
             <li><a href=""src/main/webapp/WEB-INF/views/Home.jsp"">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Services">Services</a></li>
+            <li><a href="Works">Works</a></li>
+            <li><a href="News">News</a></li>
+            <li><a href="Contact">Contact</a></li>
             <li>
               <a class="btn btn-default btn-outline btn-circle"  data-toggle="collapse" href="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1">Categories</a>
             </li>

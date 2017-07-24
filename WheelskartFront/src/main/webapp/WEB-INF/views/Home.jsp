@@ -47,6 +47,10 @@ ${message}
 <jsp:include page="Admin/Product.jsp"></jsp:include> <br>
 </c:if>
 	
+	<!-- Display cart content -->
+	<c:if test="${isUserClickedCart=='true'}">
+		<jsp:include page="User/myCart.jsp"></jsp:include>
+	</c:if>
 
 	
 	<c:if test="${isUserClickedLogin=='true'}">
@@ -54,7 +58,10 @@ ${message}
 		<jsp:include page="Login.jsp"></jsp:include>
 
 	</c:if>
-	
+	<!-- Display Carousel and Products -->
+	<c:if test="${isUserAtHomePage=='true'}">
+		<jsp:include page="AllProducts.jsp"></jsp:include>
+	</c:if>
 	
 	
 
@@ -62,7 +69,7 @@ ${message}
 	<c:if test="${isUserClickedRegister=='true' }">
 		<jsp:include page="Registration.jsp"></jsp:include>
 	</c:if>
-	
+
 	<%@include file="Courosel.jsp" %>
 	<%@include file="Footer.jsp" %>
 </body>

@@ -109,7 +109,7 @@ public class ProductController {
 		product.setId(Util.removeComman(product.getId()));
 		productDAO.saveOrUpdate(product);
 
-		FileUtil.upload(path, file, product.getId() + ".jpg");
+		FileUtil.upload(path, file, product.getId() + ".PNG");
 		log.debug("Ending of the method addProduct");
 		model.addAttribute("isAdminClickedProducts", "true");
 		model.addAttribute("productList", this.productDAO.list());
@@ -117,26 +117,26 @@ public class ProductController {
 		model.addAttribute("categoryList", this.categoryDAO.list());
 		model.addAttribute("category", new Category());
 		
-		return "/home";
+		return "/Home";
 		// return "redirect:/uploadFile";
 
 	}
 
-	@RequestMapping("manage_product/remove/{id}")
+	@RequestMapping("manage_product_delete/{id}")
 	public String removeProduct(@PathVariable("id") String id, ModelMap model) throws Exception {
-		log.debug("Starting of the method removeProduct");
+		log.debug("Starting of the method deleteProduct");
 		try {
 			productDAO.delete(id);
-			model.addAttribute("message", "Successfully Added");
+			model.addAttribute("message", "Successfully deleted");
 		} catch (Exception e) {
 			model.addAttribute("message", e.getMessage());
 			e.printStackTrace();
 		}
-		log.debug("Ending of the method removeProduct");
+		log.debug("Ending of the method deleteProduct");
 		return "forward:/manage_products";
 	}
 
-	@RequestMapping("manage_product/edit/{id}")
+	@RequestMapping("manage_product_edit/{id}")
 	public String editProduct(@PathVariable("id") String id, Model model) {
 		//categoryDAO.saveOrUpdate(category);
 		log.debug(" Starting of the method editProduct");
@@ -148,7 +148,7 @@ public class ProductController {
 	}
 
 	// Get select product details
-	@RequestMapping("manage_product/get/{id}")
+	@RequestMapping("manage_product_get/{id}")
 	public ModelAndView getSelectedProduct(@PathVariable("id") String id, RedirectAttributes redirectAttributes) {
 		log.debug("Starting of the method getSelectedProduct");
 		ModelAndView mv = new ModelAndView("redirect:/");

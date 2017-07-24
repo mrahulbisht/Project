@@ -27,7 +27,7 @@
 
 					<c:otherwise>
 						<div class="col-sm-9">
-							<form:input path="id" pattern=".{5,20}" required="true" title="id should contains 5 to 20 characters" cssClass="form-control" />
+							<form:input path="id"  cssClass="form-control" />
 						</div>
 					</c:otherwise>
 				</c:choose>
@@ -134,8 +134,8 @@
 						<td>${product.category.name}</td>
 						<td>${product.supplier.name}</td>
 
-						<td><a href="<c:url value='manage-product-edit/${product.id}' />" class="btn btn-info"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a> 
-						<a href="<c:url value='manage-product-delete/${product.id}' />" class="btn btn-danger"><i class="fa fa-trash-o fa-lg"></i> Delete</a></td>
+						<td><a href="<c:url value='manage_product_edit/${product.id}' />" class="btn btn-info"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a> 
+						<a href="<c:url value='manage_product_delete/${product.id}' />" class="btn btn-danger"><i class="fa fa-trash-o fa-lg"></i> Delete</a></td>
 					</tr>
 				</c:forEach>
 			</table>

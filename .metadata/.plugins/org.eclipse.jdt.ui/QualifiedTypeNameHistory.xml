@@ -38,7 +38,6 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="ch.qos.logback.classic.Logger"/>
 <fullyQualifiedTypeName name="com.niit.domain.User"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 <fullyQualifiedTypeName name="org.slf4j.Logger"/>
 <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
 <fullyQualifiedTypeName name="javax.persistence.FetchType"/>
@@ -46,15 +45,16 @@
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
-<fullyQualifiedTypeName name="com.niit.domain.Category"/>
-<fullyQualifiedTypeName name="com.niit.dao.CategoryDAO"/>
-<fullyQualifiedTypeName name="com.niit.domain.Product"/>
-<fullyQualifiedTypeName name="com.niit.domain.Supplier"/>
-<fullyQualifiedTypeName name="com.niit.dao.SupplierDAO"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-<fullyQualifiedTypeName name="com.niit.dao.ProductDAO"/>
 <fullyQualifiedTypeName name="javax.persistence.Column"/>
 <fullyQualifiedTypeName name="antlr.collections.List"/>
 <fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.niit.domain.Category"/>
+<fullyQualifiedTypeName name="com.niit.dao.CategoryDAO"/>
+<fullyQualifiedTypeName name="com.niit.domain.Product"/>
+<fullyQualifiedTypeName name="com.niit.dao.SupplierDAO"/>
+<fullyQualifiedTypeName name="com.niit.dao.ProductDAO"/>
+<fullyQualifiedTypeName name="com.niit.domain.Supplier"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 </qualifiedTypeNameHistroy>

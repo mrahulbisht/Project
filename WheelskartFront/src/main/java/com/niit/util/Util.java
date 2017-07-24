@@ -11,7 +11,7 @@ public class Util {
 	
 	public static void main(String[] args) {
 		
-		String cid = ",mobile_category";
+		String cid = ",bike_category";
 		
 		System.out.println("cid before remove commaa" +cid);
 	

@@ -113,6 +113,31 @@ public class HomeController {
 		return "Registration";
 	}
 
-
-			
+	@RequestMapping("/Contact")
+	public String contactUs(Model model) {
+	
+		return "Contact";
+	}
+	@RequestMapping("/About")
+	public String about(Model model) {
+		model.addAttribute("isUserClickedAbout", "true");
+	
+		return "About";
+	}		
+	@RequestMapping("/Works")
+	public String workPage(Model model) {
+		model.addAttribute("isUserClickedWorks", "true");
+		return "Works";
+	}
+	@RequestMapping("/News")
+	public String newsPage(Model model) {
+		model.addAttribute("isUserClickedNews", "true");
+	
+		return "News";
+	}
+	@RequestMapping("/Services")
+	public String servicesPage(Model model) {
+		model.addAttribute("isUserClickedServices", "true");
+		return "Services";
+	}
 }
